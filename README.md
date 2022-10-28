@@ -4,15 +4,11 @@
 
 I am a passionate node.js developer
 
-- 🔭 I’m good at developing **Full stack node.js apps**
-
-- 🌱 I’m currently learning **Nest.js & Microservices**
-
-- 👯 I’m looking to collaborate on **Open source projects**
-
-- 💬 Ask me about **NextJs, React, Tailwind, MongoDb**
-
-- ⚡ Fun fact: **I love 🏂,🏐 and 🎸**
+* 🔭 I’m good at developing **Full stack node.js apps**
+* 🌱 I’m currently learning **Nest.js & Microservices**
+* 👯 I’m looking to collaborate on **Open source projects**
+* 💬 Ask me about **NextJs, React, Tailwind, MongoDb**
+* ⚡ Fun fact: **I love 🏂,🏐 and 🎸**
 
 ### **Skills:**
 
