@@ -9,6 +9,9 @@
 - 📫 Reach me: [Telegram](https://t.me/rephones)
 
 [![codewars](https://www.codewars.com/users/m7mark/badges/small)](https://www.codewars.com/users/m7mark)
+[![visitors](https://komarev.com/ghpvc/?username=sollidy&color=grey)](https://github.com/sollidy)
+
+
 
 
 
