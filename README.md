@@ -7,8 +7,8 @@
 - 🔎 I'm familiar with: `Postgres`, `Mongo`, `gRPC`, `CQRS`, `RabbitMQ`, `Docker`, `Next.js`
 - ⚡ I love 🏂,🏐 and 🏊‍♂️
 - 📫 Reach me: [Telegram](https://t.me/rephones)
----
-![image](https://www.codewars.com/users/m7mark/badges/small)
+
+[![codewars](https://www.codewars.com/users/m7mark/badges/small)](https://www.codewars.com/users/m7mark)
 
 
 
