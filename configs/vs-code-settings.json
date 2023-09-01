@@ -1,0 +1,214 @@
+{
+  "editor.fontSize": 16,
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "moxer-icons",
+  "git.confirmSync": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "projectManager.git.baseFolders": [
+    "Projects",
+    "C:\\Code",
+    "~/Desktop/git/cs",
+    "~/Desktop/git/sollidy"
+  ],
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<Leader>", "c"],
+      "after": ["y"]
+    },
+    {
+      "before": ["<Leader>", "v"],
+      "after": ["\"", "*", "p"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "j"],
+      "after": ["C-d"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "after": ["z", "z"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["C-u"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "after": ["G"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "Esc"]
+    },
+    {
+      "before": ["<Leader>", "v"],
+      "after": ["\"", "*", "p"]
+    },
+    {
+      "before": ["<Leader>", "r"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<Leader>", "s"],
+      "commands": [
+        "editor.action.formatDocument",
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": ["<Leader>", "h"],
+      "after": ["^"]
+    },
+    {
+      "before": ["<Leader>", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<Leader>", "q"],
+      "after": ["<C-w>", "q"]
+    },
+    {
+      "before": ["<Leader>", ","],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<Leader>", "b"],
+      "after": ["%"]
+    },
+    {
+      "before": ["<Leader>", "u"],
+      "after": ["<C-r>"]
+    },
+    {
+      "before": ["<Leader>", "y"],
+      "after": ["y", "i", "w"]
+    },
+    {
+      "before": ["<Leader>", "x"],
+      "after": ["v", "i", "w"]
+    },
+    {
+      "before": ["<Leader>", "n"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<Leader>", "d"],
+      "after": ["d", "$"]
+    },
+    {
+      "before": ["<Leader>", "f"],
+      "after": ["#"]
+    },
+    {
+      "before": ["<Leader>", "t"],
+      "commands": ["workbench.action.showCommands"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "codesnap.containerPadding": "1em",
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "workbench.preferredLightColorTheme": "FlatUI Immersed",
+  "workbench.preferredDarkColorTheme": "Gatito Theme",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true
+  },
+  "vim.commandLineModeKeyBindings": [],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Gatito Theme",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "http.proxyAuthorization": null,
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": [],
+  "editor.language.colorizedBracketPairs": [],
+  "editor.codeActionsOnSave": {},
+  "editor.tokenColorCustomizations": {},
+  "npm.packageManager": "yarn",
+  "workbench.editorAssociations": {
+    "*.gz": "default",
+    "*.svg": "default",
+    "*.png": "imagePreview.previewEditor"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    ".pnp.cjs": "plaintext",
+    "*.scss": "postcss"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.javascript.autoAttachFilter": "disabled",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "buf.binaryPath": "/home/linuxbrew/.linuxbrew/bin/buf",
+  "[proto3]": {
+    "editor.defaultFormatter": "bufbuild.vscode-buf"
+  },
+  "protoc": {},
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git-graph.dialog.rebase.launchInteractiveRebase": true,
+  "vim.searchHighlightTextColor": "#6f0",
+  "vim.sneak": true,
+  "docker.containers.label": "ContainerName",
+  "docker.containers.sortBy": "Label",
+  "editor.foldingMaximumRegions": 1000
+}
