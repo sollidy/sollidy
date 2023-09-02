@@ -15,6 +15,7 @@ git-prompt
 z
 alias-tips
 fzf-zsh-plugin
+zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -39,5 +40,3 @@ alias lC='la --sort=changed'            # Long, sort changed
 alias lM='la --sort=modified'           # Long, sort modified
 alias lS='la --sort=size'               # Long, sort size
 alias lX='la --sort=extension'          # Long, sort extension
-
-source /home/sollidy/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
