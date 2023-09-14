@@ -8,7 +8,7 @@ fzf-tab
 git
 dirhistory
 yarn
-nvm
+zsh-nvm
 brew
 command-not-found
 git-prompt
@@ -19,15 +19,13 @@ zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-
-export JAVA_HOME=/opt/jdk-17.0.1+12
-export PATH=$PATH:$JAVA_HOME/bin
 export FZF_PREVIEW_ADVANCED=true
 
 # Example aliases
 alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
 alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
-alias bat="batcat"
+alias ta="tmux attach"
+alias vi="nvim"
 
 # Group directories first, show icons, and enable file size color scale
 alias ls='exa --group-directories-first --icons --color-scale'
