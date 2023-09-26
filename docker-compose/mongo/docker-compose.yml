@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: bitnami/mongodb
+    environment:
+      - MONGODB_DATABASE=threejsback
+    ports:
+      - '27017:27017'
