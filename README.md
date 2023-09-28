@@ -1,4 +1,4 @@
-### Hey, I'm Mark 🧔🏻
+### Hey, I'm Mark 🧑🏻‍💻
 
 #### I'm a Full-Stack TS Developer.
 
