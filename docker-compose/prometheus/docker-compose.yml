@@ -42,8 +42,10 @@ services:
     image: percona/mongodb_exporter:0.39
     container_name: mongo-exporter
     hostname: mongo-exporter
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     command:
-      - --mongodb.uri=mongodb://mongodb_exporter:password@mongo:27017
+      - --mongodb.uri=mongodb://mongodb_exporter:password@host.docker.internal:27017
       - --mongodb.global-conn-pool
       - --mongodb.direct-connect
       - --compatible-mode
