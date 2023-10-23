@@ -4,7 +4,7 @@
 
 - ⚙️ I use daily: `TypeScript`, `Nest.js`
 - 🌱 I’m currently learning `Kubernetes`, `Grafana`
-- 🔎 I'm familiar with: `Postgres`, `Mongo`, `gRPC`, `CQRS`, `RabbitMQ`, `Docker`, `Next.js`, `Sentry`, `Microservices`
+- 🔎 I'm familiar with: `Microservices`, `Postgres`, `Mongo`, `gRPC`, `CQRS`, `RabbitMQ`, `Docker`, `Next.js`, `Sentry`, `Prometheus`, `Linux`
 - ⚡ I love 🏂,🏐 and 🏊‍♂️
 - 📫 Reach me: [Telegram](https://t.me/rephones)
 
