@@ -3,6 +3,8 @@ version: '3.9'
 services:
   prometheus:
     image: prom/prometheus:latest
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     volumes:
       - ./prometheus:/etc/prometheus/
     container_name: prometheus
@@ -10,7 +12,7 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
     ports:
-      - 9090:9090
+      - '9090:9090'
     restart: unless-stopped
     environment:
       TZ: 'Europe/Moscow'
@@ -31,7 +33,7 @@ services:
       - --collector.filesystem.ignored-mount-points
       - ^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)
     ports:
-      - 9100:9100
+      - '9100:9100'
     restart: unless-stopped
     environment:
       TZ: 'Europe/Moscow'
@@ -51,7 +53,7 @@ services:
       - --compatible-mode
       - --collect-all
     ports:
-      - 9216:9216
+      - '9216:9216'
     restart: unless-stopped
     environment:
       TZ: 'Europe/Moscow'
@@ -64,13 +66,27 @@ services:
     depends_on:
       - prometheus
     ports:
-      - 3030:3000
+      - '3030:3000'
     volumes:
       - ./grafana:/var/lib/grafana
       - ./grafana/provisioning/:/etc/grafana/provisioning/
     container_name: grafana
     hostname: grafana
     restart: unless-stopped
+    environment:
+      TZ: 'Europe/Moscow'
+    networks:
+      - default
+
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    hostname: loki
+    ports:
+      - '3100:3100'
+    volumes:
+      - ./grafana/loki-data:/data
+    command: -config.file=/etc/loki/local-config.yaml
     environment:
       TZ: 'Europe/Moscow'
     networks:
