@@ -85,8 +85,8 @@ services:
     ports:
       - '3100:3100'
     volumes:
-      - ./grafana/loki-data:/data
-    command: -config.file=/etc/loki/local-config.yaml
+      - ./loki/loki-data:/data
+    command: '-config.file=/etc/loki/local-config.yaml -querier.max-outstanding-requests-per-tenant=2048 -querier.max-concurrent=2048'
     environment:
       TZ: 'Europe/Moscow'
     networks:

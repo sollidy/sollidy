@@ -1,1 +1,2 @@
 /docker-compose/prometheus/grafana
+/docker-compose/prometheus/loki
