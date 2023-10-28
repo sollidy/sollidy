@@ -6,6 +6,5 @@ scrape_configs:
           [
             'node-exporter:9100',
             'mongo-exporter:9216',
-            'host.docker.internal:5000',
-            'host.docker.internal:5003',
+            'host.docker.internal:9209',
           ]
