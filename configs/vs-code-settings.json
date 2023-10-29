@@ -8,14 +8,14 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "workbench.iconTheme": "moxer-icons",
   "git.confirmSync": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "projectManager.git.baseFolders": [
     "Projects",
     "C:\\Code",
-    "~/Desktop/git/cs",
-    "~/Desktop/git/sollidy"
+    "~/Git/cs",
+    "~/Git/my-projects",
+    "~/Git/atls"
   ],
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
@@ -24,107 +24,238 @@
   "projectManager.openInNewWindowWhenClickingInStatusBar": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["<Leader>", "c"],
-      "after": ["y"]
+      "before": [
+        "<Leader>",
+        "c"
+      ],
+      "after": [
+        "y"
+      ]
     },
     {
-      "before": ["<Leader>", "v"],
-      "after": ["\"", "*", "p"]
+      "before": [
+        "<Leader>",
+        "v"
+      ],
+      "after": [
+        "\"",
+        "*",
+        "p"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "j"],
-      "after": ["C-d"]
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "after": [
+        "C-d"
+      ]
     },
     {
-      "before": ["<leader>", "z"],
-      "after": ["z", "z"]
+      "before": [
+        "<leader>",
+        "z"
+      ],
+      "after": [
+        "z",
+        "z"
+      ]
     },
     {
-      "before": ["<leader>", "k"],
-      "after": ["C-u"]
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "after": [
+        "C-u"
+      ]
     },
     {
-      "before": ["<leader>", "g"],
-      "after": ["G"]
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
     },
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
     },
     {
-      "before": ["<leader>", "o"],
-      "after": ["o", "Esc"]
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "after": [
+        "editor.action.quickFix"
+      ]
     },
     {
-      "before": ["<Leader>", "v"],
-      "after": ["\"", "*", "p"]
+      "before": [
+        "<Leader>",
+        "v"
+      ],
+      "after": [
+        "\"",
+        "*",
+        "p"
+      ]
     },
     {
-      "before": ["<Leader>", "r"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<Leader>",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["<Leader>", "s"],
+      "before": [
+        "<Leader>",
+        "s"
+      ],
       "commands": [
         "editor.action.formatDocument",
         "workbench.action.files.save"
       ]
     },
     {
-      "before": ["<Leader>", "h"],
-      "after": ["^"]
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
     },
     {
-      "before": ["<Leader>", "l"],
-      "after": ["$"]
+      "before": [
+        "<Leader>",
+        "l"
+      ],
+      "after": [
+        "$"
+      ]
     },
     {
-      "before": ["<Leader>", "q"],
-      "after": ["<C-w>", "q"]
+      "before": [
+        "<Leader>",
+        "q"
+      ],
+      "after": [
+        "<C-w>",
+        "q"
+      ]
     },
     {
-      "before": ["<Leader>", ","],
-      "after": ["<C-w>", "h"]
+      "before": [
+        "<Leader>",
+        ","
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
     },
     {
-      "before": ["<Leader>", "b"],
-      "after": ["%"]
+      "before": [
+        "<Leader>",
+        "b"
+      ],
+      "after": [
+        "%"
+      ]
     },
     {
-      "before": ["<Leader>", "u"],
-      "after": ["<C-r>"]
+      "before": [
+        "<Leader>",
+        "u"
+      ],
+      "after": [
+        "<C-r>"
+      ]
     },
     {
-      "before": ["<Leader>", "y"],
-      "after": ["y", "i", "w"]
+      "before": [
+        "<Leader>",
+        "y"
+      ],
+      "after": [
+        "y",
+        "i",
+        "w"
+      ]
     },
     {
-      "before": ["<Leader>", "x"],
-      "after": ["v", "i", "w"]
+      "before": [
+        "<Leader>",
+        "x"
+      ],
+      "after": [
+        "v",
+        "i",
+        "w"
+      ]
     },
     {
-      "before": ["<Leader>", "n"],
-      "commands": [":noh"]
+      "before": [
+        "<Leader>",
+        "n"
+      ],
+      "commands": [
+        ":noh"
+      ]
     },
     {
-      "before": ["<Leader>", "d"],
-      "after": ["d", "$"]
+      "before": [
+        "<Leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "$"
+      ]
     },
     {
-      "before": ["<Leader>", "f"],
-      "after": ["#"]
+      "before": [
+        "<Leader>",
+        "f"
+      ],
+      "after": [
+        "#"
+      ]
     },
     {
-      "before": ["<Leader>", "t"],
-      "commands": ["workbench.action.showCommands"]
+      "before": [
+        "<Leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
     }
   ],
   "vim.leader": "<space>",
@@ -163,13 +294,11 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Gatito Theme",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, JetBrains Mono, Consolas, 'Courier New', monospace",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1,
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -199,7 +328,6 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "buf.binaryPath": "/home/linuxbrew/.linuxbrew/bin/buf",
   "[proto3]": {
     "editor.defaultFormatter": "bufbuild.vscode-buf"
   },
@@ -210,5 +338,18 @@
   "vim.sneak": true,
   "docker.containers.label": "ContainerName",
   "docker.containers.sortBy": "Label",
-  "editor.foldingMaximumRegions": 1000
+  "editor.foldingMaximumRegions": 1000,
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
+  "workbench.iconTheme": "bearded-icons",
+  "vim.useCtrlKeys": false,
+  "window.zoomLevel": 1,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "gitTreeCompare.diffMode": "merge",
+  "gitTreeCompare.showCheckboxes": false,
+  "whichkey.bindingOverrides": [],
+  "workbench.colorTheme": "ReUI II Dark (Italic)",
+  "editor.minimap.enabled": false
 }
