@@ -4,12 +4,13 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
+kube-ps1
+kubectl
 fzf-tab
 git
 dirhistory
 yarn
 zsh-nvm
-brew
 command-not-found
 git-prompt
 z
