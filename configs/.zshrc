@@ -21,17 +21,19 @@ zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+
 export FZF_PREVIEW_ADVANCED=true
 
 # Example aliases
 alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
 alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
 alias ta="tmux attach"
+alias aws="aws --endpoint-url http://10.0.1.143:9000"
 alias vi="nvim"
 
 # Group directories first, show icons, and enable file size color scale
-alias ls='exa --group-directories-first --icons --color-scale'
-alias lt='exa --tree --level=2 --icons' # Show in tree view
+alias ls='eza --group-directories-first --icons --color-scale'
+alias lt='eza --tree --level=2 --icons' # Show in tree view
 alias l='ls -a'                         # Short, all files
 alias ld='l -D'                         # Short, only directories
 alias ll='ls -lbG --git'                # Long, file size prefixes, grid, git status
