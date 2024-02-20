@@ -1,5 +1,10 @@
 version: '3.8'
 
+networks:
+  db-network:
+    name: dbNetwork
+    driver: bridge
+
 services:
   db:
     image: bitnami/postgresql
@@ -9,6 +14,8 @@ services:
       - POSTGRESQL_USER=postgres
     ports:
       - '5432:5432'
+    networks:
+      - db-network
 
   pgadmin:
     image: dpage/pgadmin4
@@ -17,5 +24,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: password
     ports:
       - '15432:80'
+    networks:
+      - db-network
     depends_on:
       - db
