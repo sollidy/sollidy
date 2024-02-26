@@ -9,7 +9,7 @@ services:
   db:
     image: bitnami/postgresql
     environment:
-      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_PASSWORD=postgres
       - POSTGRESQL_DATABASE=db
       - POSTGRESQL_USER=postgres
     ports:

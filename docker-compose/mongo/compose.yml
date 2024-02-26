@@ -4,6 +4,6 @@ services:
   mongo:
     image: bitnami/mongodb
     environment:
-      - MONGODB_DATABASE=threejsback
+      - MONGODB_DATABASE=db
     ports:
       - '27017:27017'
