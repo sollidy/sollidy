@@ -3,6 +3,9 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
+autoload -U compinit
+compinit -i
+
 plugins=(
 helm
 kube-ps1
@@ -15,9 +18,11 @@ zsh-nvm
 command-not-found
 git-prompt
 z
-alias-tips
 fzf-zsh-plugin
 zsh-syntax-highlighting
+docker
+docker-compose
+alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -25,11 +30,13 @@ source $ZSH/oh-my-zsh.sh
 export FZF_PREVIEW_ADVANCED=true
 
 # Example aliases
-alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
-alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
+# alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
+# alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
+alias vpnon="sudo openvpn --config ~/Documents/config/CS.ovpn --auth-nocache --disable-dco"
+alias vpnoff="sudo killall openvpn"
 alias ta="tmux attach"
-alias aws="aws --endpoint-url http://10.0.1.143:9000"
 alias vi="nvim"
+alias cb="xclip -selection clipboard"
 
 # Group directories first, show icons, and enable file size color scale
 alias ls='eza --group-directories-first --icons --color-scale'
