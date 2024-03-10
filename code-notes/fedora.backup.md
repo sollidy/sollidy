@@ -26,5 +26,6 @@ sudo tar \
 --exclude='/home/*/.yarn/berry/cache' \
 --exclude='/home/*/.var/app/com.google.Chrome/cache' \
 --exclude='/home/*/.config/libvirt/qemu/save' \
+--exclude='/home/*/.config/yarn/global/node_modules' \
 -cvpzf /run/media/mark/BACKUP/backup.tar.gz / | tee output.txt
 ```
