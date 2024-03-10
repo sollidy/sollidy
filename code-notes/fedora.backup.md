@@ -27,5 +27,12 @@ sudo tar \
 --exclude='/home/*/.var/app/com.google.Chrome/cache' \
 --exclude='/home/*/.config/libvirt/qemu/save' \
 --exclude='/home/*/.config/yarn/global/node_modules' \
+--exclude='/home/*/output.txt' \
 -cvpzf /run/media/mark/BACKUP/backup.tar.gz / | tee output.txt
+```
+
+#### Yarn global
+
+```sh
+yarn global add uglify-js typescript pm2 pino-pretty http-server create-next-app @nestjs/cli @asyncapi/generator
 ```
