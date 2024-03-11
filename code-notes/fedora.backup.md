@@ -9,8 +9,8 @@ sudo tar \
 --exclude='/dev' \
 --exclude='/sys' \
 --exclude='/run' \
---exclude='/media' \
 --exclude='/var/log' \
+--exclude='/var/spool/abrt' \
 --exclude='/var/cache/apt/archives' \
 --exclude='/var/lib/docker' \
 --exclude='/var/cache/apt/archives' \
@@ -28,7 +28,14 @@ sudo tar \
 --exclude='/home/*/.config/libvirt/qemu/save' \
 --exclude='/home/*/.config/yarn/global/node_modules' \
 --exclude='/home/*/output.txt' \
--cvpzf /run/media/mark/BACKUP/backup.tar.gz / | tee output.txt
+--exclude='/home/*/.minikube/cache' \
+-cvpzf /run/media/mark/Backup/backup.tar.gz / | tee output.txt
+```
+
+```sh
+sudo tar -xvpzf /run/media/mark/Backup/backup.tar.gz -C /run/media/mark/fedora --numeric-owner;
+cd /run/media/mark/Sys;
+sudo mkdir proc tmp mnt dev sys run var/log
 ```
 
 #### Yarn global
