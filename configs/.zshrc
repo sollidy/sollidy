@@ -32,7 +32,7 @@ export FZF_PREVIEW_ADVANCED=true
 # Example aliases
 # alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
 # alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
-alias vpnon="sudo openvpn --config ~/Documents/config/CS.ovpn --auth-nocache --disable-dco"
+alias vpnon="sudo openvpn --config ~/Documents/vpn/CS.ovpn --auth-nocache --disable-dco"
 alias vpnoff="sudo killall openvpn"
 alias ta="tmux attach"
 alias vi="nvim"
