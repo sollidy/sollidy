@@ -70,3 +70,33 @@ sudo dnf install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
+
+## [docker](https://docs.docker.com/engine/install/fedora/)
+
+```sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh ./get-docker.sh --dry-run
+```
+
+## [minikube + kubernetes + helm](https://docs.fedoraproject.org/en-US/quick-docs/using-kubernetes/)
+
+```sh
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+sudo rpm -Uvh minikube-latest.x86_64.rpm
+minikube start --vm-driver=docker
+
+sudo dnf install kubernetes-kubeadm kubernetes-node kubernetes-client
+sudo dnf install helm
+```
+
+## virtual machine manager
+
+```sh
+sudo dnf install @virtualization
+```
+
+## yarn global
+
+```sh
+yarn global add @asyncapi/generator @nestjs/cli pm2 typescript uglify-js
+```

@@ -14,6 +14,7 @@ services:
       - POSTGRESQL_USER=postgres
     ports:
       - '5432:5432'
+    restart: always
     networks:
       - db-network
 
@@ -24,6 +25,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: postgres
     ports:
       - '15432:80'
+    restart: always
     networks:
       - db-network
     depends_on:
