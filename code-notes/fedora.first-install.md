@@ -100,3 +100,11 @@ sudo dnf install @virtualization
 ```sh
 yarn global add @asyncapi/generator @nestjs/cli pm2 typescript uglify-js
 ```
+
+## task
+
+```sh
+sudo dnf install go-task
+sudo ln -s /usr/bin/go-task /usr/bin/task
+cd /usr/share/zsh/site-functions
+```
