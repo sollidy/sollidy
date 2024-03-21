@@ -106,5 +106,18 @@ yarn global add @asyncapi/generator @nestjs/cli pm2 typescript uglify-js
 ```sh
 sudo dnf install go-task
 sudo ln -s /usr/bin/go-task /usr/bin/task
-cd /usr/share/zsh/site-functions
 ```
+
+## autocomplete
+
+```sh
+sudo _mv _nest /usr/share/zsh/site-functions/
+```
+
+<details>
+  <summary>Complete Files</summary>
+
+1. nest - https://github.com/filipekiss/nestjs-cli-completion/
+2. task - https://github.com/go-task/task/tree/main/completion
+
+</details>
