@@ -37,6 +37,7 @@ alias vpnoff="sudo killall openvpn"
 alias ta="tmux attach"
 alias vi="nvim"
 alias cb="xclip -selection clipboard"
+alias fbig="find . -type f -printf '%s %p\n'|sort -nr|head"
 
 # Group directories first, show icons, and enable file size color scale
 alias ls='eza --group-directories-first --icons --color-scale'
