@@ -121,3 +121,13 @@ sudo _mv _nest /usr/share/zsh/site-functions/
 2. task - https://github.com/go-task/task/tree/main/completion
 
 </details>
+
+## net tools
+
+<details>
+
+1. nmap
+2. burp suit
+3. gobuster
+
+</details>
