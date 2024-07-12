@@ -2,7 +2,7 @@
 
 #### I'm a Full-Stack TS Developer.
 
-- ⚙️ I use daily: `TypeScript`, `Nest.js`
+- ⚙️ I use daily: `TypeScript`, `Nest.js`, `Go`
 - 🌱 I’m currently learning `Datasets & ML`, `Python`
 - 🔎 I'm familiar with: `Microservices`, `Postgres`, `Mongo`, `gRPC`, `CQRS`, `RabbitMQ`, `Docker`, `Next.js`, `Sentry`, `Prometheus`, `Grafana`, `Linux`, `Kubernetes`, `Helm`, `Traefik`
 - ⚡ I love 🏂,🏐 and 🏊‍♂️
