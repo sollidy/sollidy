@@ -25,6 +25,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: postgres
     ports:
       - '15432:80'
+    volumes:
+      - ./config/servers.json:/pgadmin4/servers.json
     restart: always
     networks:
       - db-network

@@ -1,5 +1,6 @@
 /docker-compose/prometheus/grafana
 /docker-compose/prometheus/loki
 /docker-compose/redis/cache
+/docker-compose/pg/config
 
 .DS_Store
