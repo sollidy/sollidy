@@ -23,6 +23,7 @@ zsh-syntax-highlighting
 docker
 docker-compose
 alias-tips
+golang
 )
 
 source $ZSH/oh-my-zsh.sh
