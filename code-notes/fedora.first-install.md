@@ -1,3 +1,27 @@
+## chrome + gnome-tweaks
+
+```sh
+sudo dnf config-manager --set-enabled google-chrome
+sudo dnf install google-chrome-stable
+
+sudo dnf install gnome-tweaks
+```
+
+## [vs-code](https://code.visualstudio.com/docs/setup/linux)
+
+```sh
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc;
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo';
+dnf check-update
+sudo dnf install code
+```
+
+## git
+
+```sh
+git config --global credential.helper store
+```
+
 ## [oh-my-zsh](https://ohmyz.sh/)
 
 ```sh
@@ -13,7 +37,6 @@ source .zshrc
 
 sudo dnf install eza
 sudo dnf install bat
-
 ```
 
 ## ignore lid switch
@@ -34,6 +57,8 @@ sudo dnf install bat
 1. Vitals
 2. Caffeine
 3. Another windows session manager
+4. AppIndicator and KStatusNotifierItem Support
+5. Lock Keys
 
 </details>
 
@@ -45,22 +70,10 @@ sudo dnf install -y neovim python3-neovim;
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim;
 ```
 
-## git
+## yarn global
 
 ```sh
-git config --global credential.helper store
-```
-
-## [vs-code](https://code.visualstudio.com/docs/setup/linux), chrome
-
-```sh
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc;
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo';
-dnf check-update
-sudo dnf install code
-
-sudo dnf config-manager --set-enabled google-chrome
-sudo dnf install google-chrome-stable
+yarn global add @asyncapi/generator @nestjs/cli pm2 typescript uglify-js
 ```
 
 ## tmux
@@ -95,12 +108,6 @@ sudo dnf install helm
 sudo dnf install @virtualization
 ```
 
-## yarn global
-
-```sh
-yarn global add @asyncapi/generator @nestjs/cli pm2 typescript uglify-js
-```
-
 ## task
 
 ```sh
@@ -131,3 +138,10 @@ sudo _mv _nest /usr/share/zsh/site-functions/
 3. gobuster
 
 </details>
+
+## openvpn3
+
+```sh
+sudo dnf copr enable dsommers/openvpn3
+sudo dnf install openvpn3-client
+```
