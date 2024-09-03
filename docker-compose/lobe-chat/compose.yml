@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  lobe-chat:
+    image: lobehub/lobe-chat:latest
+    container_name: lobe-chat
+    ports:
+      - '3210:3210'
+    restart: always
