@@ -145,3 +145,9 @@ sudo _mv _nest /usr/share/zsh/site-functions/
 sudo dnf copr enable dsommers/openvpn3
 sudo dnf install openvpn3-client
 ```
+
+## aws-cli
+
+```sh
+sudo dnf install awscli2
+```
