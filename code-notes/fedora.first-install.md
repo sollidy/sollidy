@@ -59,6 +59,9 @@ sudo dnf install bat
 3. Another windows session manager
 4. AppIndicator and KStatusNotifierItem Support
 5. Lock Keys
+6. Miniview
+7. Blur my Shell
+8. Burn My Windows
 
 </details>
 
