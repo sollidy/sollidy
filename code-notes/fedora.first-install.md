@@ -62,6 +62,7 @@ sudo dnf install bat
 6. Miniview
 7. Blur my Shell
 8. Burn My Windows
+9. Just Another Search Bar
 
 </details>
 
