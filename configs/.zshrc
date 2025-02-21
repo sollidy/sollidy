@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 export FZF_PREVIEW_ADVANCED=true
 
-# Example aliases
+# Aliases
 # alias vpnon="openvpn3 session-start --config ~/Documents/config/OVPN_CS.ovpn"
 # alias vpnoff="openvpn3 session-manage --config ~/Documents/config/OVPN_CS.ovpn --disconnect"
 alias vpnon="sudo openvpn --config ~/Documents/vpn/CS.ovpn --auth-nocache --disable-dco"
@@ -39,6 +39,7 @@ alias ta="tmux attach"
 alias vi="nvim"
 alias cb="xclip -selection clipboard"
 alias fbig="find . -type f -printf '%s %p\n'|sort -nr|head"
+alias cl="clear"
 
 # Group directories first, show icons, and enable file size color scale
 alias ls='eza --group-directories-first --icons --color-scale'
