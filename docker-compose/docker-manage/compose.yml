@@ -8,10 +8,11 @@ services:
     security_opt:
       - no-new-privileges:true
     volumes:
-      - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
       - 9988:9000
+    environment:
+      - TZ=Europe/Moscow # Set timezone via environment variable
 
   dozzle:
     container_name: dozzle
